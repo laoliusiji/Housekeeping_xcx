@@ -1,0 +1,34 @@
+<!--pages/mine/coupon.wxml-->
+<view class="app">
+  <view class="menu">
+    <text bindtap="onclick_menu" data-type="0" style="color: {{type==0?color: ''}}; border-width:{{type==0? 3: 0}}; border-color: {{type==0?color: ''}}; border-bottom-style:solid;">全部</text>
+    <text bindtap="onclick_menu" data-type="1" style="color: {{type==1?color: ''}}; border-width:{{type==1? 3: 0}}; border-color: {{type==0?color: ''}}; border-bottom-style:solid;">未使用</text>
+    <text bindtap="onclick_menu" data-type="2" style="color: {{type==2?color: ''}}; border-width:{{type==2? 3: 0}}; border-color: {{type==0?color: ''}}; border-bottom-style:solid;">已使用</text>
+    <text bindtap="onclick_menu" data-type="3" style="color: {{type==3?color: ''}}; border-width:{{type==3? 3: 0}}; border-color: {{type==0?color: ''}}; border-bottom-style:solid;">已过期</text>
+  </view>
+
+  <view class='coupons'>
+
+    <view class="item" wx:for="{{datas}}">
+      <view class="lt">
+        <text>yen</text>
+        <text class="price">{{item.money}}</text>
+      </view>
+      <view class="ct">
+        <view class="name">{{item.way_mean}}</view>
+        <view class="man">满{{item.need_money}}元可用</view>
+        <view class="date">{{item.can_use_time}}~{{item.expir_time}}</view>
+      </view>
+      <view class="rt">
+        <text class='{{item.status == 1 ? "" : "over"}}'>{{item.status_mean}}</text>
+      </view>
+      <view class="topyuan"></view>
+      <view class="btyuan"></view>
+    </view>
+</view>
+<view bindtap="loadMore" wx:if="{{datas!=''&&more==1}}" style="color:{{color}}" class="more">查看更多</view>
+<view wx:if="{{datas!=''&&more==0}}" class="nomore">没有数据了</view> 
+<view wx:if="{{datas==''&&more==0}}" class="nomore">暂无数据</view>
+
+  <view class="jszc">技术支持：www.xmdeal.com</view>
+</view>

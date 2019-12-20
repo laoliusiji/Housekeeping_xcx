@@ -1,0 +1,28 @@
+<view class="app">
+
+  <view class="bushiyong">
+      <text>不使用优惠券</text>
+      <image bindtap="nouse" hidden="{{usecoupon?false:true}}" src="/imgs/duihaono.png"></image>
+      <image hidden="{{usecoupon?true:false}}" src="/imgs/duihaoyes.png"></image>
+  </view>
+
+  <view wx:for="{{hongbaolist}}" class="coupon">
+    <image class="bg" src="/imgs/coupon_on.png"></image>
+    <image  class="dian" src="/imgs/coupon_dian.png"></image>
+    <view class="datas">
+        <view class="lt on">
+            <text>¥</text>{{item.money}}
+        </view>
+        <view class="ct">
+            <view class="type">
+              商家优惠券
+            </view>
+            <text>满{{item.need_money}}元可用</text>
+            <text>{{item.can_use_time}}至{{item.expir_time}}</text>
+        </view>
+        <view class="rt">
+            <text  bindtap="yesuse" data-need="{{item.need_money}}"  data-id="{{item.coupon_id}}" data-money="{{item.money}}"  class=" on">立即使用</text>
+        </view>
+    </view>
+  </view>
+</view>

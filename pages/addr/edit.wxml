@@ -1,0 +1,62 @@
+<form bindsubmit="fromSubmit">
+  <view class="table_form">
+    <view class="input bdbt">
+      <text>联系人</text>
+      <input name="name" type="text" value="{{addr.name}}" placeholder="真实联系人" />
+    </view>
+    <view class="input bdbt">
+      <text>手机号码</text>
+      <input name="mobile" type="text" value="{{addr.mobile}}" placeholder="手机号码" />
+    </view>
+
+    <view class="input bdbt">
+      <text>身份证</text>
+      <input name="idcard" type="text" value="{{addr.idcard}}" placeholder="请输入身份证" />
+    </view>
+
+    
+   
+    <view bindtap="map" class="map bdbt">
+      <text class="lt">地址定位</text>
+      <text class="ct">{{addr.gps_addr == '' ? "选择地图坐标" : addr.gps_addr}}</text>
+      <input hidden='true' value='{{addr.gps_addr}}' name="gps_addr" />
+      <input hidden='true' value="{{addr.lng}}" name="lng" />
+      <input hidden='true' value="{{addr.lat}}" name="lat" />
+      <image src="/img/dw.png"></image>
+      <input hidden="true" />
+    </view>
+    <view class="input">
+      <text>具体地址</text>
+      <input name="address" value='{{addr.address}}' type="text" placeholder="具体地址" />
+    </view>
+
+  </view>
+  
+
+
+  <view class="table_form">
+    <view class="input">
+      <text>默认地址</text>
+      <radio-group bindchange="radioChange">
+        <label>
+          <radio name="is_default" checked='{{addr.is_default==1?true:false}}' value="1" />设为默认地址
+        </label>
+      </radio-group>
+    </view>
+
+  </view>
+
+  
+
+
+
+<view class="jszc">技术支持：www.xmdeal.com</view>
+<view class="kongbai"></view>
+
+<view class="addbtn">
+
+    <button form-type='submit' style="background:{{color}}">确认保存</button>
+
+</view>
+
+</form>

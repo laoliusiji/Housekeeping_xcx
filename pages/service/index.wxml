@@ -1,0 +1,82 @@
+<!--pages/service/index.wxml-->
+<view class='app'>
+  <view class='screen'>
+    <view class='type'>
+      <text bindtap='typeonbin'>{{typemsg}}</text>
+      <image bindtap='typeonbin' class='arrow' src='/imgs/jiantouxia.png'></image>
+    </view>
+    <view class='line'></view>
+    <view class='sort'>
+      <text bindtap='orderonbin'>{{ordermsg}}</text>
+      <image bindtap='orderonbin' class='arrow' src='/imgs/jiantouxia.png'></image>
+    </view>
+    <!-- //排序 1推荐排序 2预约数排序 3价格升序 4价格降序 -->
+  <view hidden="{{orderon}}" class="orderlist">
+    <view bindtap='orderby' data-orderby="1" data-msg="推荐排序">推荐排序</view>
+    <view bindtap='orderby' data-orderby="2" data-msg="预约数排序">预约数排序</view>
+    <view bindtap='orderby' data-orderby="3" data-msg="价格从高到低">价格从高到低</view>
+    <view bindtap='orderby' style='' data-orderby="4" data-msg="价格从低到高">价格从低到高</view>
+  </view>
+  <view hidden="{{typeon}}" class="orderleft">
+    <view bindtap='typetab' data-type="1" data-msg="家政保姆">家政保姆</view>
+    <view bindtap='typetab' data-type="2" data-msg="月嫂育婴">月嫂育婴</view>
+  </view>
+  </view>
+  <view class='list'>
+    <view class='item' wx:for="{{datas}}">
+      <navigator url='/pages/service/homepage?nanny_id={{item.nanny_id}}'>
+        <view class='lf'>
+          <image src='{{item.photo}}' mode='aspectFill'></image>
+        </view>
+        <view class='rf'>
+          <view class='col'>
+            <text class='name'>{{item.name}}</text>
+            <text class='salary'><text class='price'>{{item.price}}</text>元/天</text>
+          </view>
+          <view class='col' style='color:#8a8a8a'>
+            {{item.age}}岁 | {{item.place}} | {{item.work}}年工作经验
+          </view>
+          <view class='col'>
+            <text class='num'>浏览数:{{item.views_num}}</text>
+            <text class='num'>预约数:{{item.yvyue_num}}</text>
+            <!-- <text class='num'>评论数:{{item.comment_num}}</text> -->
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+<view bindtap="loadMore" wx:if="{{datas!=''&&more==1}}" style="color:{{color}}" class="more">查看更多</view>
+<view wx:if="{{datas!=''&&more==0}}" class="nomore">没有数据了</view>
+<view wx:if="{{datas==''&&more==0}}" class="nomore">暂无数据</view>
+  <view class="jszc">技术支持：www.xmdeal.com</view>
+  <view style="height:100rpx;"></view>
+  <view class="footer">
+    <view class="ft_item">
+      <navigator open-type="redirect" url="/pages/index/index">
+        <view class="image iconfont icon-shouye:before"></view>
+        <text>首页</text>
+      </navigator>
+    </view>
+    <view style="color:{{color}}" class="ft_item">
+      <navigator open-type='redirect' url='/pages/service/index'>
+        <view class="image iconfont icon-baomu:before"></view>
+        <text>阿姨</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/order/index'>
+        <view class="image iconfont icon-dingdan:before"></view>
+        <text>订单</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/mine/index'>
+        <view class="image iconfont icon-icon-yxj-empty-my:before"></view>
+        <text>我的</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+<view class="kefutel">
+  <text class='iconfont icon-kefu' bindtap='callPhone'></text>
+</view>

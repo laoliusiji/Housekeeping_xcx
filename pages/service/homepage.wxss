@@ -1,0 +1,254 @@
+/* pages/service/homepage.wxss */
+
+.baseinfo {
+  width: 100%;
+  height: 220rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+  background: #fff;
+}
+
+.baseinfo .lf {
+  width: 30%;
+  height: 220rpx;
+  float: left;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+
+.baseinfo .rf {
+  width: 64%;
+  height: 220rpx;
+  padding: 0 3%;
+  float: right;
+}
+
+.baseinfo .lf image {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+}
+
+.col {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #fff;
+}
+
+.col .num {
+  width: auto;
+  height: 50rpx;
+  font-size: 22rpx;
+  margin-right: 20rpx;
+}
+
+.col .name {
+  width: 50%;
+  height: 50rpx;
+  font-size: 28rpx;
+  text-align: left;
+  float: left;
+}
+
+.col .share {
+  width: auto;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 22rpx;
+  text-align: right;
+  float: right;
+  display: inline-flex;
+}
+
+.col .share image {
+  width: 30rpx;
+  height: 30rpx;
+  padding-top: 10rpx;
+  margin-right: 10rpx;
+}
+
+.col .share text {
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.col .price {
+  font-size: 32rpx;
+}
+
+.app .menu {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.app .menu text {
+  width: 33%;
+  height: 80rpx;
+  float: left;
+  text-align: center;
+  font-size: 26rpx;
+}
+
+.app .base {
+  width: 92%;
+  height: auto;
+  padding: 10rpx 4%;
+  background: #fff;
+  margin-top: 1rpx;
+}
+
+.app .base .bitem {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+}
+
+.title {
+  width: 120rpx;
+  float: left;
+  color: #8a8a8a;
+}
+
+.content {
+  float: left;
+  color: #000;
+}
+
+.album {
+  width: 94%;
+  height: auto;
+  padding: 15rpx 3%;
+  background: #fff;
+  overflow: hidden;
+  margin-top: 1rpx;
+}
+
+.album .photo {
+  width: 29.9%;
+  height: 200rpx;
+  float: left;
+  margin: 12rpx;
+}
+
+.album .photo image {
+  width: 100%;
+  height: 200rpx;
+}
+
+.comment {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  margin-top: 1rpx;
+}
+
+.comment .item {
+  width: 92%;
+  height: auto;
+  padding: 0 4%;
+  padding-bottom: 20rpx;
+  background: #fff;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+
+.comment .item .binfo {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+}
+
+.binfo .face {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  margin: 15rpx 0;
+  float: left;
+}
+
+.binfo .info {
+  width: 70%;
+  height: 100rpx;
+  margin-left: 30rpx;
+  float: left;
+}
+
+.binfo .info .name {
+  height: auto;
+  font-size: 28rpx;
+  line-height: 36rpx;
+  margin-top: 15rpx;
+  color: #8a8a8a;
+}
+
+.binfo .info .date {
+  height: auto;
+  font-size: 26rpx;
+  line-height: 34rpx;
+  color: #8a8a8a;
+}
+
+.item .comminfo {
+  width: 77%;
+  margin-left: 100rpx;
+  background: #f5f5f5;
+  padding: 20rpx 4%;
+  color: #515151;
+  font-size: 28rpx;
+}
+
+.skill {
+  width: 100%;
+  height: auto;
+}
+
+.skill .sitem {
+  width: 94%;
+  height: auto;
+  padding: 10rpx 3%;
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.skill .header {
+  width: 100%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+
+.tags {
+  width: 100%;
+  height: auto;
+  padding-top: 10rpx;
+  display: inline-block;
+}
+
+.tags .titem {
+  width: auto;
+  height: 45rpx;
+  line-height: 45rpx;
+  border: 1rpx #515151 solid;
+  margin-top: 20rpx;
+  padding: 0 12rpx;
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+  color: #515151;
+  float: left;
+}
+
+.yuyue{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+}

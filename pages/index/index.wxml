@@ -1,0 +1,102 @@
+<!--index.wxml-->
+<view class='app'>
+  <swiper style='height:360rpx;' indicator-dots="true" autoplay="true" interval="5000" duration="true">
+    <swiper-item wx:for="{{datas.banner}}">
+      <image src="{{item.photo}}" class="slide-image" />
+    </swiper-item>
+
+  </swiper>
+
+  <swiper class="swiper-box" indicator-dots="true">
+    <swiper-item wx:for="{{length}}" index="{{pindex}}" wx:for-index="pindex">
+        <view class="menu">
+          <view class="item" wx:for="{{categorys}}" index="index" wx:for-index="index" wx:if="{{index<pindex*8+8 && index>=pindex*8}}">
+            <navigator url='{{item.type==1?"/pages/index/type?category_id=":"/pages/service/index?category_id="}}{{item.category_id}}'>
+              <view style="background:{{item.color}}" class="icon">
+                <image src="{{item.ico}}"></image>
+              </view>
+              <text>{{item.name}}</text>
+            </navigator>
+          </view>
+        </view>
+    </swiper-item>
+  </swiper>
+
+  <view class="youhuiquan">
+    <scroll-view class="scroll-view_H" scroll-x style="width: 100%">
+      <view class="item" wx:for="{{datas.activity}}">
+        <view class="lt">
+          <text>yen</text>
+          <text class="price">{{item.money}}</text>
+        </view>
+        <view class="ct">
+          <view class="name">{{item.title}}</view>
+          <view class="man">满{{item.need_money}}元可用</view>
+        </view>
+        <view class="rt">
+           <text data-id="{{item.activity_id}}" bindtap='receive'>领取</text>
+        </view>
+        <view class="topyuan"></view>
+        <view class="btyuan"></view>
+      </view>
+    </scroll-view>
+  </view>
+<view class='block' wx:for="{{datas.list}}">
+    <view class='title'>
+      {{item.category_name}}
+      <!-- <text class='hint'> | 超过40%网友还约过的服务</text> -->
+    </view>
+    <view class='hot'>
+      <scroll-view scroll-x="true" class="pro">
+        <view class="item"  wx:for="{{item.list}}" wx:for-item="val">
+          <navigator url='/pages/index/detail?repair_id={{val.repair_id}}'>
+            <image src="{{val.photo}}" mode='aspectFit'></image>
+            <view class='name'>{{val.title}}</view>
+            <view class='hint'>{{val.title2}}</view>
+          </navigator>
+        </view>
+      </scroll-view>
+    </view>
+</view>
+
+
+
+
+
+ 
+
+
+  <view class="jszc">技术支持：www.xmdeal.com</view>
+  <view class='kongbai'></view>
+
+  <view class="footer">
+    <view style="color:{{color}}" class="ft_item">
+      <navigator open-type="redirect" url="/pages/index/index">
+        <view class="image iconfont icon-shouye:before"></view>
+        <text>首页</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/service/index'>
+        <view class="image iconfont icon-baomu:before"></view>
+        <text>阿姨</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/order/index'>
+        <view class="image iconfont icon-dingdan:before"></view>
+        <text>订单</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/mine/index'>
+        <view class="image iconfont icon-icon-yxj-empty-my:before"></view>
+        <text>我的</text>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+<view class="kefutel">
+  <text class='iconfont icon-kefu' bindtap='callPhone'></text>
+</view>

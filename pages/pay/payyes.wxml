@@ -1,0 +1,9 @@
+<view  wx:if="{{type==1}}" class="yespay">
+    <image src='/img/yespay.png'></image>
+    <view>成功支付<text>¥{{money}}</text>元</view>
+</view>
+
+<view  wx:if="{{type==0}}"  class="nopay">
+    <image src='/img/nopay.png'></image>
+    <view>很抱歉未支付</view>
+</view>

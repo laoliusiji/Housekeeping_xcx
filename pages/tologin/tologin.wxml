@@ -1,0 +1,6 @@
+<view>
+<view class="login">
+<view class="login-text" >为了更好的用户体验，请你允许获取用户的公开信息 </view>
+<button class="login-button"  open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>
+</view>

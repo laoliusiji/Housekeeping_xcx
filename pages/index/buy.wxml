@@ -1,0 +1,42 @@
+<!--pages/index/buy.wxml-->
+<view class='app'>
+<view class="noaddr" hidden="{{address==''? false: true}}">
+  <navigator url="/pages/addr/index">
+    <image src="/imgs/dw.png"></image>
+    <view>还没收货地址,
+      <text>添加</text>
+    </view>
+  </navigator>
+</view>
+<view hidden="{{address==''? true: false}}" class="addr">
+  <navigator url="/pages/addr/index">
+    <view class="lt">
+      <image src='/imgs/dw.png'></image>
+    </view>
+    <view class="ct">
+      <view>收货人：{{address.name}}；电话：{{address.mobile}}</view>
+      <view>{{address.merge_addr}}</view>
+    </view>
+    <view class="rt">
+      <image src='/imgs/jiantou.png'></image>
+    </view>
+  </navigator>
+</view>
+  <view class="table_form">
+    <view class="picker bdbt">
+      <text class="lt">服务时间：</text>
+       <picker class='ct' mode="date" value="{{date}}" start="{{datas.date}}" bindchange="seledate">
+        <text>{{date ? date : '请选择服务时间'}} </text>
+      </picker>
+      <image class="rt" src="/imgs/jiantou.png"></image>
+      <input hidden="true" value="{{cate}}" />
+    </view>
+
+    <view class="input bdbt">
+      <text>预付定金：</text>
+      <view class="price" style='color:{{color}}'>¥{{datas.price}}</view>
+    </view>
+  </view>
+
+  <button class='yuyue' bindtap='getPayment' style='background:{{color}}'>立即预约</button>
+</view>

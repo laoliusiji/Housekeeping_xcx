@@ -1,0 +1,4 @@
+/* pages/login/login.wxss */
+.login{  margin: 0 auto; width: 75%; text-align: center; }
+.login-text { color: #1aac19; font-size: 12px;  margin-top: 300rpx; }
+.login-button { background-color: #1aac19; color: #fff; height: 100rpx; margin-top: 30rpx}

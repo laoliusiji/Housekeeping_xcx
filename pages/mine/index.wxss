@@ -1,0 +1,79 @@
+/* pages/mine/index.wxss */
+
+.header {
+  width: 100%;
+  height: 200rpx;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20rpx 0;
+}
+
+.header .image {
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+  border-radius: 75rpx;
+  margin: 0 auto;
+}
+
+.header .nickname {
+  width: 100%;
+  text-align: center;
+  margin-top: 10rpx;
+  height: auto;
+  overflow: hidden;
+  color: #fff;
+}
+
+.header .nickname image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.header text {
+  width: 150rpx;
+  padding: 10rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.action {
+  width: 100%;
+  margin-top: 20rpx;
+  height: auto;
+  overflow: hidden;
+}
+
+.action .col {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  border-top: 1px solid #f5f5f5;
+}
+
+.action .tubiao {
+  float: left;
+  width: 48rpx;
+  height: 48rpx;
+  margin-left: 26rpx;
+  margin-top: 26rpx;
+}
+
+.action .jiantou {
+  float: right;
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 20rpx;
+  margin-top: 35rpx;
+}
+
+.action .col text {
+  height: 100rpx;
+  width: 200rpx;
+  float: left;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+  color: #666;
+  font-size: 28rpx;
+}

@@ -1,0 +1,26 @@
+<radio-group bindchange="radioChange">
+  <view class="addr" wx:for="{{datas}}">
+    <view class="lt">
+      <radio value='{{item.address_id}}' checked='{{item.is_default==1? true:false}}'></radio>
+    </view>
+    <view class="lt">
+      <text class="iconfont icon-location"></text>
+    </view>
+    <view class="ct">
+      <view>服务地址：{{item.name}}；电话：{{item.mobile}}</view>
+      <view>{{item.merge_addr}}</view>
+    </view>
+    <view class="rt">
+      <navigator open-type='redirect' url="/pages/addr/edit?id={{item.address_id}}">
+        <text class="iconfont icon-bianji"></text>
+      </navigator>
+    </view>
+  </view>
+</radio-group>
+<view class="kongbai"></view>
+
+<view class="addbtn">
+  <navigator url='/pages/addr/add'>
+    <button style="background:{{color}}">新增地址</button>
+  </navigator>
+</view>

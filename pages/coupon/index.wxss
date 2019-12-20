@@ -1,0 +1,104 @@
+.app {
+  font-size: 26rpx;
+  background:#f3f3f3;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  min-height: 1300rpx;
+}
+
+.bushiyong{
+  width: 96%;
+  margin: 0 auto;
+  background: #fff;
+  border: 1rpx solid #e2e2e2;
+  height: 100rpx;
+  line-height: 100rpx; 
+  margin-top: 30rpx;
+}
+
+.bushiyong text{
+  float: left; margin-left: 20rpx; font-size: 36rpx;
+  color: #999; 
+}
+.bushiyong image{
+  float: right; margin-right: 30rpx;
+  height: 50rpx;
+  width: 50rpx;
+  margin-top: 20rpx;
+}
+
+.coupon{
+  width: 96%; margin: 0 auto; height:220rpx; background: #fff;
+  margin-top: 20rpx; 
+  position: relative;
+}
+.coupon .bg{
+  width: 100%;  
+  height: 220rpx;
+ 
+}
+.coupon .datas{
+  position: absolute; top: 0;left: 0;
+}
+.coupon .dian{
+  position: absolute;
+  height: 20rpx;
+  width: 20rpx; 
+  top: 150rpx;
+  left: -10rpx;
+
+}
+.coupon .on{
+  color:#fd2055;
+}
+.coupon .off{
+  color: #999;
+}
+
+
+.coupon .lt{
+  float: left; line-height: 200rpx;
+  width: 100rpx; margin-left: 40rpx;
+  font-size: 48rpx;
+
+}
+.coupon .lt text{
+  font-size: 26rpx;
+}
+
+.coupon .ct{
+  float: left;
+  width: 400rpx;
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+.coupon .ct .title{
+  font-size: 38rpx;
+  color: #000;
+  display: block;
+}
+
+.coupon .ct text{
+  display: block;
+  width: 100%; margin-top: 10rpx;
+  color: #ccc;
+}
+.coupon .rt {
+  float: right;margin-right: 20rpx;
+  height: 200rpx; line-height: 200rpx;
+}
+
+.coupon .rt .on{
+   background:  #fd2055;
+   padding: 10rpx; font-size: 26rpx;
+   color: #fff;
+   border-radius: 5rpx;
+}
+
+.coupon .rt .off{
+   background:  #ccc;
+   padding: 10rpx; font-size: 26rpx;
+   color: #fff;
+   border-radius: 5rpx;
+}

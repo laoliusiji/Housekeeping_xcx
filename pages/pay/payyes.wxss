@@ -1,0 +1,25 @@
+.yespay{
+  margin-top: 50rpx;
+  text-align: center; 
+}
+
+.yespay image{
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.yespay text{
+  color: red;
+}
+
+.nopay{
+    margin-top: 50rpx;
+
+  color: red;
+  text-align: center;
+}
+
+.nopay image{
+  width: 200rpx;
+  height: 200rpx;
+}

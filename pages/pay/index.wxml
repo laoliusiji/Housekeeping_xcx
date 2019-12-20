@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="app">
+  <view class="paycons">
+    <view class="receivables">
+      <view class="title">收款金额</view>
+      <view class="receinput">
+        <text>¥</text>
+        <input bindblur='number2' value="{{money}}" type="number" />
+      </view>
+    </view>
+    <view class='col'>
+      <text>使用优惠券：</text>
+      <text  bindtap='select' style='width: 68%; float:right;{{coupon !="" ? "color:red;":""}}  text-align:right;'>{{coupon !=''?coupon:'请选择>'}}</text>
+    </view>
+    <view class='col'>
+      <text>需要支付金额：</text>
+       <text style='width: 68%; text-align:right;float:right; color:red;'>{{need_money}}</text>
+    </view>
+    <view class="line"></view>
+    <button bindtap='payment'>微信支付</button>
+    <view class="kongbai"></view>
+  </view>
+  <view class="botview">
+    <view class="item">
+      <view class="imgs">
+        <image src="/imgs/icon_kj.png"></image>
+      </view>
+      <view class="texts">快捷支付</view>
+    </view>
+    <view class="item">
+      <view class="imgs">
+        <image src="/imgs/icon_aq.png"></image>
+      </view>
+      <view class="texts">安全交易</view>
+    </view>
+    <view class="item">
+      <view class="imgs">
+        <image src="/imgs/icon_yh.png"></image>
+      </view>
+      <view class="texts">尽享优惠</view>
+    </view>
+  </view>
+</view>
+

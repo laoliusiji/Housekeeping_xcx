@@ -1,0 +1,29 @@
+{
+  "extEnable": true,
+  "pages":[
+    "pages/index/index",
+    "pages/index/buy",
+    "pages/index/type",
+    "pages/index/detail",
+    "pages/service/index",
+    "pages/service/buy",
+    "pages/service/homepage",
+    "pages/addr/index",
+    "pages/addr/add",
+    "pages/addr/edit",
+    "pages/order/index",
+    "pages/order/detail",
+    "pages/mine/index",
+    "pages/mine/coupon",
+    "pages/pay/index",
+    "pages/pay/payyes",
+    "pages/coupon/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "海天应用家政服务小程序",
+    "navigationBarTextStyle":"#fff"
+  }
+    
+}

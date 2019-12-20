@@ -1,0 +1,51 @@
+<!--pages/index/detail.wxml-->
+<view class='app'>
+  <view class='thumbnail' style='background:#fff'>
+    <image src='{{datas.photo}}' mode='aspectFit'></image>
+  </view>
+
+  <view class='info'>
+    <view class='table'>
+      <view class='header tblb'>
+        <view class='item tblr' style='color:#8a8a8a'>
+          项目名称
+        </view>
+        <view class='item tblr' style='color:#8a8a8a'>
+          日常价格
+        </view>
+        <view class='item' style='color:#8a8a8a'>
+          活动价格
+        </view>
+      </view>
+
+      <view class='header tblb' wx:for="{{datas.sku}}" style='background:transparent;'>
+        <view class='item tblr'>
+            {{item.name}}
+        </view>
+        <view class='item tblr'>
+          {{item.price}}元
+        </view>
+        <view class='item'>
+          {{item.hd_price}}元
+        </view>
+      </view>
+    </view>
+
+    <view class='alert'>
+      <view class='title'>介绍：</view>
+      <text class='content'>{{datas.introduce}}</text>
+    </view>
+  </view>
+<!-- 
+  <view class='info'>
+  </view> -->
+  <view class='bview'>
+    <view class='lt'>
+      <text class='price'>¥{{datas.price}}</text>
+      <text class='unit'>预约费</text>
+    </view>
+    <navigator url='/pages/index/buy?repair_id={{repair_id}}'>
+      <view class='rt' style='background:{{color}}'>预约</view>
+    </navigator>
+  </view>
+</view>

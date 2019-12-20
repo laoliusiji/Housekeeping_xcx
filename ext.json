@@ -1,0 +1,15 @@
+{
+  "extEnable": true,
+  "extAppid": "wxd1f6d4c81fe891e6",
+  "ext": {
+    "apiurl": "https://www.123.com",
+    "appid": "138",
+    "appkey": "37d55cad9225d65fc5cf1de9bb731234",
+    "skin": "skin1"
+  },
+  "extPages": {},
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

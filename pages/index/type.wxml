@@ -1,0 +1,16 @@
+<!--pages/index/type.wxml-->
+<view class='app'>
+  <!-- <view class='hot'> -->
+    <view class="item" wx:for="{{datas}}">
+      <navigator url='/pages/index/detail?repair_id={{item.repair_id}}'>
+        <image src="{{item.photo}}" mode='aspectFill'></image>
+        <view class='name'>{{item.title}}</view>
+        <view class='hint'>{{item.title2}}</view>
+      </navigator>
+    </view>
+  <!-- </view> -->
+<view bindtap="loadMore" wx:if="{{datas!=''&&more==1}}" style="color:{{color}}" class="more">查看更多</view>
+<view wx:if="{{datas!=''&&more==0}}" class="nomore">没有数据了</view>
+<view wx:if="{{datas==''&&more==0}}" class="nomore">暂无数据</view>
+  <view class="jszc">技术支持：www.xmdeal.com</view>
+</view>

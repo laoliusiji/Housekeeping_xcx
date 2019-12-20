@@ -1,0 +1,136 @@
+/* pages/service/index.wxss */
+.app .screen {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+
+.app .screen .type, .app .screen .sort {
+  width: 49.8%;
+  height: 80rpx;
+  text-align: center;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  width: 0.4%;
+  height: 40rpx;
+  margin: 20rpx 0;
+  float: left;
+  background: #f5f5f5;
+}
+
+.arrow {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 12rpx;
+}
+
+.list {
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.list .item {
+  width: 100%;
+  height: 180rpx;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+
+.list .item .lf {
+  width: 27%;
+  height: 180rpx;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list .item .rf {
+  width: 67%;
+  height: 150rpx;
+  padding: 15rpx 3%;
+  float: right;
+}
+
+.list .item .lf image {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+}
+
+.col {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+
+.col .num {
+  width: auto;
+  height: 50rpx;
+  font-size: 22rpx;
+  color: #8a8a8a;
+  margin-right: 20rpx;
+}
+.orderlist{
+  position: absolute;
+  height: 200rpx;
+  width: 50%;
+  right: 0rpx;
+  top: 82rpx;
+  border-right: 1rpx solid #f2f2f2;
+  border-bottom:  1rpx solid #f2f2f2;
+  background: #fff;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 30rpx;
+  z-index: 100;
+}
+.orderlist view{
+    border-bottom:  1rpx solid #f2f2f2;
+}
+
+.orderleft{
+  position: absolute;
+  height: 100rpx;
+  width: 50%;
+  left: 0rpx;
+  top: 82rpx;
+  border-right: 1rpx solid #f2f2f2;
+  border-bottom:  1rpx solid #f2f2f2;
+  background: #fff;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 30rpx;
+  z-index: 100;
+}
+.orderleft view{
+    border-bottom:  1rpx solid #f2f2f2;
+}
+.col .name {
+  width: 50%;
+  height: 50rpx;
+  font-size: 28rpx;
+  text-align: left;
+  float: left;
+}
+
+.col .salary {
+  width: 50%;
+  height: 50rpx;
+  font-size: 28rpx;
+  text-align: right;
+  float: right;
+  color: #8a8a8a;
+}
+
+.col .salary .price {
+  font-size: 32rpx;
+  color: #f00;
+}

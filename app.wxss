@@ -1,0 +1,341 @@
+/**app.wxss**/
+
+page {
+  background: #f2f2f2;
+  font-size: 24rpx;
+}
+
+.app {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slide-image {
+  width: 100%;
+  height: 360rpx;
+}
+
+.more, .nomore {
+  height: 60rpx;
+  /* text-align: center; */
+  line-height: 60rpx;
+  font-size: 26rpx;
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
+  border-top: 1rpx solid #f2f2f2;
+}
+
+.nomore {
+  color: #ccc;
+}
+
+.jszc {
+  height: 80rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  overflow: hidden;
+  color: #ccc;
+}
+
+.kongbai {
+  width: 100%;
+  height: 120rpx;
+}
+
+.footer {
+  height: 100rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1rpx solid #e2e2e2;
+}
+
+.footer .ft_item {
+  width: 25%;
+  height: 100%;
+  text-align: center;
+  float: left;
+  color: #666;
+}
+
+.footer .ft_item .image {
+  height: 45rpx;
+  width: 45rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10rpx;
+  font-size: 45rpx;
+}
+
+.footer .ft_item image {
+  height: 45rpx;
+  width: 45rpx;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10rpx;
+}
+
+.footer  .ft_item text {
+  text-align: center;
+  font-size: 22rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.bdbt{
+  border-bottom: 1rpx solid #e2e2e2;
+}
+
+.tblt {
+  border-top: 1rpx #bdbdbd solid;
+}
+
+.tblb {
+  border-bottom: 1rpx #bdbdbd solid;
+}
+
+.tbll {
+  border-left: 1rpx #bdbdbd solid;
+}
+
+.tblr {
+  border-right: 1rpx #bdbdbd solid;
+}
+
+.kefutel {
+  position: fixed;
+  z-index: 100;
+  right: 10rpx;
+  bottom: 200rpx;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  text-align: center;
+}
+
+.kefutel text {
+  font-size: 50rpx;
+  line-height: 80rpx;
+}
+
+@font-face {
+	font-family: 'iconfont';
+	src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff'),
+		url('iconfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouye:before { content: "\e632"; }
+
+.icon-bianji:before { content: "\e605"; }
+
+.icon-icon-yxj-empty-my:before { content: "\e651"; }
+
+.icon-kefu:before { content: "\e622"; }
+
+.icon-baomu:before { content: "\e600"; }
+
+.icon-dingdan:before { content: "\e820"; }
+
+/** 小程序去除滚动条 **/
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.table_form{
+  height: auto;
+  overflow: hidden;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+
+.table_form .input{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+}
+
+.table_form .input text{
+  float: left;
+  width: 20%;
+  margin-left: 2%;
+}
+.table_form .input input{
+  float: left;
+  width: 70%;
+  margin-left: 5rpx;
+  height: 80rpx;font-size: 24rpx;
+}
+.table_form .input radio-group{
+  float: left;margin-left: 5rpx;
+  font-size: 24rpx; color: #666;
+}
+.table_form .input radio{
+  transform:scale(0.8);
+}
+
+.table_form .photolist{
+  height: auto;
+  overflow: hidden;
+  width: 96%;
+  margin-left: 2%;
+}
+.table_form .photolist .title{
+  width: 20%;
+  float: left;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 26rpx;
+}
+.table_form .photolist .action{
+  width: 70%;
+  float: left;margin-left: 10rpx;
+  height: 100rpx;
+}
+.table_form .photolist .action image{
+    height: 100rpx;
+    width: 100rpx;
+}
+.table_form .photolist .photos{
+  float: left;
+  margin-top: 20rpx;
+  width:100%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.table_form .photolist .photos .item {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.table_form .photolist image{
+  float: left;
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 10rpx;
+}
+.table_form .picker{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+}
+.table_form .map{
+  height: 80rpx;
+  line-height: 80rpx;
+  overflow: hidden;
+}
+.table_form .map .lt{
+  float: left;
+  width: 20%;
+  margin-left: 2%;
+  font-size: 26rpx;
+
+}
+.table_form .map .ct{
+  width: 60%;
+  height: 80rpx;
+  overflow: hidden;
+  float: left;
+  margin-left: 5rpx;
+}
+.table_form .map image{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;margin-right: 10rpx;
+  margin-top: 20rpx;
+}
+
+.table_form .picker .lt{
+  float: left;
+  width: 20%;
+  margin-left: 2%;
+}
+.table_form .picker .ct{
+  float: left;
+  width: 60%;
+  margin-left: 5rpx;
+  font-size: 24rpx;
+  color: #666;
+  text-align: right;
+}
+
+.table_form .picker .rt{
+  float: right;
+  margin-right: 10rpx; height: 40rpx;
+  width: 40rpx;
+  margin-top: 20rpx;
+}
+
+
+.table_form .textarea{
+  height: 200rpx;
+  width: 96%;
+  margin-left: 2%;
+  font-size: 26rpx;
+}
+
+.table_form .textarea text{
+  line-height: 200rpx;
+  width: 20%;
+  float: left;
+}
+
+
+.table_form .textarea textarea{
+  width: 70%;
+  margin-left: 5rpx;
+  height: 150rpx;
+  margin-top: 25rpx;
+  float: left;
+  border: 1rpx dotted   #f2f2f2;
+  font-size: 24rpx;
+  padding: 10rpx;
+}
+
+.table_form .logo{
+  height: 100rpx;
+  font-size: 26rpx;
+}
+
+.table_form .logo .lt{
+  float: left;width: 20%;
+  margin-left: 2%;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.table_form .logo image{
+  float: left;
+  margin-left: 5rpx;
+  margin-right: 25rpx;
+  height: 100rpx;
+  width: 100rpx;
+}

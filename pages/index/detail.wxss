@@ -1,0 +1,93 @@
+/* pages/index/detail.wxss */
+
+
+.thumbnail{
+  width: 100%;
+  height: 360rpx;
+}
+
+.thumbnail image{
+  width: 100%;
+  height: 360rpx;
+}
+
+.info{
+  width: 92%;
+  height: auto;
+  background: #fff;
+  padding: 4% 4%;
+  margin-top: 20rpx;
+}
+
+.table{
+  width: 100%;
+  height: auto;
+  border: 1rpx #bdbdbd solid;
+}
+
+.table .header{
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #f5f5f5;
+  color: #bdbdbd;
+}
+
+.item{
+  width: 32.8%;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  float: left;
+  color: #000;
+}
+
+.alert{
+  width: 100%;
+  margin-top: 20rpx;
+  line-height: 42rpx;
+  color: #8a8a8a;
+}
+
+.bview{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: fixed;
+  bottom: 0;
+  border-top: 1rpx #f8f8f8 solid;
+  background: #fff;
+}
+
+.bview .lt{
+  width: 62%;
+  height: 80rpx;
+  padding: 0 4%;
+  float: left;
+}
+
+.bview .lt .price{
+  width: auto;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #FF8C00;
+  font-size: 32rpx;
+}
+
+.bview .lt .unit{
+  width: auto;
+  height: 80rpx;
+  margin-left: 8rpx;
+  line-height: 80rpx;
+  color: #bdbdbd;
+  font-size: 26rpx;
+}
+
+.bview .rt{
+  width: 30%;
+  height: 80rpx;
+  text-align: center;
+  float: left;
+  font-size: 26rpx;
+  color: #fff;
+}

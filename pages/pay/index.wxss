@@ -1,0 +1,193 @@
+/**index.wxss**/
+
+.app {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  font-size: 26rpx;
+}
+
+.app .paycons {
+  width: 92%;
+  height: auto;
+  margin: 4% 4%;
+  background: #fff;
+  margin-top: 120rpx;
+}
+
+.paycons .header {
+  width: 92%;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding: 0 4%;
+  border-bottom: 1rpx #f5f5f5 solid;
+}
+
+.paycons .header .lt {
+  width: 85%;
+  height: 100rpx;
+  float: left;
+  display: inline-flex;
+}
+
+.paycons .header .lt image {
+  width: 56rpx;
+  height: 48rpx;
+  margin: 26rpx 0;
+  float: left;
+}
+
+.paycons .header .lt text {
+  width: 100%;
+  height: 100rpx;
+  margin: 0 15rpx;
+  line-height: 100rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+}
+
+.col{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+  margin: 0 5%;
+  border-bottom: 2rpx #f5f5f5 dotted;
+}
+.col .icon{
+  float: left;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.col input{
+  float: right;
+  width: 68%;
+  height: 100rpx;
+  line-height: 100rpx;
+  
+}
+.col text{
+  float: left;
+  color: #000;
+  font-size: 28rpx;
+}
+
+/* .paycons .header .rt {
+  width: 15%;
+  height: 100rpx;
+  float: right;
+}
+
+.paycons .header .rt .icon {
+  width: 100%;
+  height: 45rpx;
+  line-height: 45rpx;
+  text-align: center;
+  margin-top: 15rpx;
+  margin-bottom: 7rpx;
+}
+
+.paycons .header .rt .icon .img {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.paycons .header .rt .texts {
+  width: 100%;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 18rpx;
+  color: #5CACEE;
+  text-align: center;
+} */
+
+.app .receivables {
+  width: 90%;
+  height: auto;
+  padding: 0 5%;
+  padding-top: 60rpx;
+}
+
+.app .receivables .title{
+  width: auto;
+  font-size: 24rpx;
+  color: #000;
+}
+
+.app .receivables .receinput {
+  width: 100%;
+  height: 120rpx;
+  margin-top:40rpx;
+}
+
+.app .receivables .receinput text {
+  width: 10%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 50rpx;
+  float: left;
+}
+
+.app .receivables .receinput input {
+  width: 90%;
+  height: 120rpx;
+  font-size: 80rpx;
+  float: left;
+}
+
+.app .line {
+  width: 90%;
+  height: 2rpx;
+  margin: 0 5%;
+  background: #f5f5f5;
+}
+
+.app button {
+  width: 86%;
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 40rpx 5%;
+  background: #71c671;
+  color: #fff;
+}
+
+.app .kongbai {
+  width: 100%;
+  height: 10rpx;
+}
+
+.app .botview {
+  width: 92%;
+  height: auto;
+  margin: 15rpx 4%;
+}
+
+.app .botview .item {
+  width: 33.3%;
+  height: auto;
+  text-align: center;
+  float: left;
+}
+
+.app .botview .item .img {
+  width: 100%;
+  height: 45rpx;
+}
+
+.app .botview .item image {
+  width: 45rpx;
+  height: 45rpx;
+}
+
+.app .botview .item .texts {
+  margin-top: 10rpx;
+  color: #8a8a8a;
+  font-size: 22rpx;
+}

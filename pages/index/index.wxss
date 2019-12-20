@@ -1,0 +1,194 @@
+/**index.wxss**/
+.swiper-box {
+  height: 370rpx;
+  background: #fff;
+}
+
+.swiper-box .wx-swiper-dots.wx-swiper-dots-horizontal {
+  padding-bottom: 10rpx;
+}
+
+.menu {
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  padding-top: 20rpx;
+}
+
+.youhuiquan {
+  height: 140rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 15rpx 0;
+}
+.scroll-view_H {
+  white-space: nowrap;
+}
+
+.scroll-view_H .item {
+  display: inline-block;
+  width: 390rpx;
+  height: 120rpx;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  border: 1rpx solid #e2e2e2;
+  box-shadow: 0px 0px 10px #f5f5f5;
+  border-radius: 10rpx;
+  position: relative;
+  border-left: 5rpx solid red;
+}
+
+.scroll-view_H .item .lt {
+  float: left;
+  width: 100rpx;
+  line-height: 120rpx;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.scroll-view_H .item .ct {
+  width: 140rpx;
+  float: left;
+}
+
+.scroll-view_H .item .ct .name {
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-top: 10rpx;
+}
+
+.scroll-view_H .item .ct .man {
+  color: #666;
+  margin-top: 10rpx;
+}
+
+.scroll-view_H .item  .rt {
+  float: right;
+  width: 100rpx;
+  border-left: 3rpx #e2e2e2 dotted;
+  height: 100%;
+}
+
+.scroll-view_H .item  .rt text {
+  padding: 5rpx 10rpx;
+  background: red;
+  color: #fff;
+  border-radius: 10rpx;
+  margin-top: 36rpx;
+  float: right;
+  margin-right: 20rpx;
+}
+.menu .item {
+  width: 25%;
+  height: 150rpx;
+  float: left;
+  text-align: center;
+}
+
+.menu .item image {
+  height: 40rpx;
+  width: 40rpx;
+  display: block;
+  float: left;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+
+.menu .item .icon {
+  height: 80rpx;
+  width: 80rpx;
+  margin: 0 auto;
+  border-radius: 40rpx;
+}
+
+.menu .item  text {
+  height: 40rpx;
+  line-height: 40rpx;
+  margin-top: 10rpx;
+  display: block;
+  font-size: 26rpx;
+}
+
+.app .block {
+  width: 96%;
+  padding: 0 2%;
+  margin-top: 20rpx;
+  background: #fff;
+  height: auto;
+  overflow: hidden;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+}
+
+.app .block .title {
+  height: 60rpx;
+  line-height: 60rpx;
+  width: 96%;
+  font-size: 28rpx;
+  text-align: left;
+  margin-left: 3%;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+
+.app .block .title .hint{
+  font-size: 22rpx;
+  color: #bdbdbd;
+}
+
+.hot {
+  width: 96%;
+  height: auto;
+  margin-left: 2%;
+  padding-top: 10rpx;
+}
+
+.hot .pro {
+  width: 100%;
+  height: 260rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+}
+
+.hot .item {
+  width: 260rpx;
+  height: 260rpx;
+  display:inline-block;
+  margin-left: 10rpx;
+}
+
+.hot .item image {
+  width: 260rpx;
+  height: 180rpx;
+  border-radius: 5rpx;
+  display: block;
+  background: #f5f5f5;
+}
+
+.hot .item .name {
+  width: 260rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hot .item .hint {
+  width: 260rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  overflow: hidden;
+  font-size: 22rpx;
+  color: #bdbdbd;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display:inline-block;
+}
+

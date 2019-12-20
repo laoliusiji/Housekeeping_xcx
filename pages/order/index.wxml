@@ -1,0 +1,64 @@
+<!--pages/service/index.wxml-->
+<view class='app'>
+  <view class="menu">
+    <text bindtap="tab" data-type="0" style='color:{{type==0? color: "#000"}}; border-bottom-color:{{type==0? color: "#fff"}}; border-bottom-width: 5rpx; border-bottom-style: solid;'>全部</text>
+    <text bindtap="tab" data-type="1" style='color:{{type==1? color: "#000"}}; border-bottom-color:{{type==1? color: "#fff"}}; border-bottom-width: 5rpx; border-bottom-style: solid;'>有效单</text>
+    <text bindtap="tab" data-type="2" style='color:{{type==2? color: "#000"}}; border-bottom-color:{{type==2? color: "#fff"}}; border-bottom-width: 5rpx; border-bottom-style: solid;'>待支付</text>
+    <text bindtap="tab" data-type="3" style='color:{{type==3? color: "#000"}}; border-bottom-color:{{type==3? color: "#fff"}}; border-bottom-width: 5rpx; border-bottom-style: solid;'>失效单</text>
+  </view>
+  <view class="order" wx:for="{{datas}}" >
+    <!-- <navigator url='/pages/order/detail'> -->
+      <view class="product_type">
+        <text class="gtype">{{item.type}}</text>
+        <text class="type">{{item.status_mean}}</text>
+      </view>
+      <view class="product">
+        <view class="title">
+          <text class="name">{{item.name}}{{item.enroll_id}}</text>
+          <text class="price">¥{{item.price}}</text>
+        </view>
+        <view class="riqi">服务日期：{{item.date!=null? item.data: "暂无填写"}}</view>
+        <view class="riqi"> 下单日期：{{item.add_time}}</view>
+      </view>
+    <!-- </navigator> -->
+    <view hidden='{{item.status >= 3 ? true :false}}' class="product_bottom">
+       <text bindtap='getPayment' data-id="{{item.enroll_id}}" data-index="{{index}}" hidden='{{item.status == 0 ? false : true}}' class="handle">支付</text> 
+      <text bindtap='quxiao' data-index="{{index}}" data-id="{{item.enroll_id}}" hidden='{{item.status <= 2 ? false : true}}' class="handle">取消</text>
+    </view>
+  </view>
+
+<view bindtap="loadMore" wx:if="{{datas!=''&&more==1}}" style="color:{{color}}" class="more">查看更多</view>
+<view wx:if="{{datas!=''&&more==0}}" class="nomore">没有数据了</view>
+<view wx:if="{{datas==''&&more==0}}" class="nomore">暂无数据</view>
+  <view class='kongbai'></view>
+
+
+
+  <!-- 产品名称，状态，服务日期，下单日期，定金金额 -->
+  <view class="footer">
+    <view class="ft_item">
+      <navigator open-type="redirect" url="/pages/index/index">
+        <view class="image iconfont icon-shouye:before"></view>
+        <text>首页</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/service/index'>
+        <view class="image iconfont icon-baomu:before"></view>
+        <text>阿姨</text>
+      </navigator>
+    </view>
+    <view style="color:{{color}}" class="ft_item">
+      <navigator open-type='redirect' url='/pages/order/index'>
+        <view class="image iconfont icon-dingdan:before"></view>
+        <text>订单</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/mine/index'>
+        <view class="image iconfont icon-icon-yxj-empty-my:before"></view>
+        <text>我的</text>
+      </navigator>
+    </view>
+  </view>
+</view>

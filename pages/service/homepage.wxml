@@ -1,0 +1,110 @@
+<!--pages/service/homepage.wxml-->
+
+<view class='app'>
+  <view class='baseinfo' style='background:{{color}}'>
+    <view class='lf'>
+      <image src='{{datas.photo}}' mode='aspectFill'></image>
+    </view>
+    <view class='rf'>
+      <view class='col'>
+        <text class='name'>{{datas.name}}</text>
+      </view>
+      <view class='col'>
+        {{datas.age}}岁 | {{datas.place}} | {{item.work}}年工作经验
+      </view>
+      <view class='col'>
+        <text class='price'>{{datas.prie}}</text>元/{{datas.day}}天
+      </view>
+      <view class='col'>
+        <text class='num'>浏览数:{{datas.views_num}}</text>
+        <text class='num'>预约数:{{datas.yvyue_num}}</text>
+        <!-- <text class='num'>评论数:{{datas.comment_num}}</text> -->
+      </view>
+    </view>
+  </view>
+
+  <view class='menu'>
+    <text bindtap="onclick_menu" data-type="0" style="color: {{type==0?color: ''}}; border-width:{{type==0? 1: 0}}; border-color: {{type==0?color: ''}}; border-bottom-style:solid;">基本资料</text>
+    <text bindtap="onclick_menu" data-type="1" style="color: {{type==1?color: ''}}; border-width:{{type==1? 1: 0}}; border-color: {{type==1?color: ''}}; border-bottom-style:solid;">照片</text>
+    <!-- <text bindtap="onclick_menu" data-type="2" style="color: {{type==2?color: ''}}; border-width:{{type==2? 1: 0}}; border-color: {{type==2?color: ''}}; border-bottom-style:solid;">评论</text> -->
+    <text bindtap="onclick_menu" data-type="3" style="color: {{type==3?color: ''}}; border-width:{{type==3? 1: 0}}; border-color: {{type==3?color: ''}}; border-bottom-style:solid;">技能</text>
+  </view>
+
+  <view class='base' hidden='{{type==0? false:true}}'>
+    <view class='bitem'>
+      <text class='title'>服务类别：</text>
+      <text class='content'>{{datas.type == 1 ? '月嫂育婴' : '保洁阿姨'}}</text>
+    </view>
+    <view class='bitem'>
+      <text class='title'>现居地：</text>
+      <text class='content'>{{datas.home}}</text>
+    </view>
+    <view class='bitem'>
+      <text class='title'>学历：</text>
+      <text class='content'>{{datas.education}}</text>
+    </view>
+    <view class='bitem'>
+      <text class='title'>籍贯：</text>
+      <text class='content'>{{datas.place}}</text>
+    </view>
+    <view class='bitem'>
+      <text class='title'>民族：</text>
+      <text class='content'>{{datas.nation}}</text>
+    </view>
+    <view class='bitem'>
+      <text class='title'>已有证件：</text>
+      <text class='content'>{{datas.certificates}}</text>
+    </view>
+    <view class='bitem'>
+      <text class='title'>终合评论：</text>
+      <text class='content'>{{datas.evaluate}}</text>
+    </view>
+  </view>
+
+  <view class='album' hidden='{{type==1? false:true}}'>
+    <view class='photo' wx:for="{{datas.photos}}">
+      <image src='{{item}}' mode='aspectFill' bindtap='lookPhoto' data-id='{{index}}'></image>
+    </view>
+  </view>
+
+  <view class='comment' hidden='{{type==2? false:true}}'>
+    <view class='item'>
+      <view class='binfo'>
+        <image class="face" src='/imgs/001.jpg'></image>
+        <view class='info'>
+          <view class='name'>请叫我码农哥</view>
+          <view class='date'>2017-10-10 15：06</view>
+        </view>
+      </view>
+      <view class='comminfo'>对待宝宝很有耐心</view>
+    </view>
+
+    <view class='item'>
+      <view class='binfo'>
+        <image class="face" src='/imgs/001.jpg'></image>
+        <view class='info'>
+          <view class='name'>请叫我码农哥</view>
+          <view class='date'>2017-10-10 15：06</view>
+        </view>
+      </view>
+      <view class='comminfo'>对待宝宝很有耐心</view>
+    </view>
+  </view>
+
+  <view class='skill' hidden='{{type==3? false:true}}'>
+    <view class='sitem' wx:for="{{datas.skills}}">
+      <view class='header'>
+        {{item.name}}
+      </view>
+      <view class='tags'>
+        <text class='titem' wx:for="{{item.children}}" wx:for-item="val">{{val.name}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="jszc">技术支持：www.xmdeal.com</view>
+  <view class='kongbai'></view>
+  <navigator url='/pages/service/buy?id={{datas.nanny_id}}'>
+    <view class='yuyue' style='background:{{color}}'>立即预约</view>
+  </navigator>
+</view>

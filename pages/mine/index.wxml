@@ -1,0 +1,71 @@
+<!--pages/service/index.wxml-->
+<view class='app'>
+  <view class="header" style='background:{{color}}'>
+    <image class="image" src="{{userinfo.face=='' ? '/image/homepage/login_no.png':userinfo.face}}"></image>
+    <view class="nickname">
+      <text class="name">{{userinfo.nick_name}}</text>
+    </view>
+  </view>
+  <view class="action">
+    <navigator url="/pages/addr/index">
+      <view class="col">
+        <image class="tubiao" src="/imgs/icon_me_01.png"></image>
+        <text>服务地址</text>
+        <image class="jiantou" src="/imgs/jiantou.png"></image>
+      </view>
+    </navigator>
+    <navigator url="/pages/mine/coupon">
+      <view class="col">
+        <image class="tubiao" src="/imgs/icon_me_02.png"></image>
+        <text>优惠券</text>
+        <image class="jiantou" src="/imgs/jiantou.png"></image>
+      </view>
+    </navigator>
+    <navigator open-type='redirect' url='/pages/order/index'>
+      <view class="col">
+        <image class="tubiao" src="/imgs/icon_me_03.png"></image>
+        <text>订单</text>
+        <image class="jiantou" src="/imgs/jiantou.png"></image>
+      </view>
+    </navigator>
+       <navigator  url='/pages/pay/index'>
+      <view class="col">
+        <image  class="tubiao" src="/imgs/icon_pay.png"></image>
+        <text>支付</text>
+        <image class="jiantou" src="/imgs/jiantou.png"></image>
+      </view>
+    </navigator>
+    <view bindtap="tel" class="col">
+      <image class="tubiao" src="/imgs/icon_me_04.png"></image>
+      <text>联系客服</text>
+      <image class="jiantou" src="/imgs/jiantou.png"></image>
+    </view>
+  </view>
+  <view class="jszc">技术支持：www.xmdeal.com</view>
+  <view class="footer">
+    <view class="ft_item">
+      <navigator open-type="redirect" url="/pages/index/index">
+        <view class="image iconfont icon-shouye:before"></view>
+        <text>首页</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/service/index'>
+        <view class="image iconfont icon-baomu:before"></view>
+        <text>阿姨</text>
+      </navigator>
+    </view>
+    <view class="ft_item">
+      <navigator open-type='redirect' url='/pages/order/index'>
+        <view class="image iconfont icon-dingdan:before"></view>
+        <text>订单</text>
+      </navigator>
+    </view>
+    <view style="color:{{color}}" class="ft_item">
+      <navigator open-type='redirect' url='/pages/mine/index'>
+        <view class="image iconfont icon-icon-yxj-empty-my:before"></view>
+        <text>我的</text>
+      </navigator>
+    </view>
+  </view>
+</view>
