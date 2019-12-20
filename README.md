@@ -1,63 +1,35 @@
-# React+Redux+Ts+Antd+Webpack+Koa 构建个人博客
+# 
 
-> ##### 技术选型：react + redux + antd + ts + webpack + koa
-> ##### 实现效果：个人博客网页展示，兼容移动端
+> ##### 技术选型：
+> ##### 实现效果：
 
 ## 写在前面
 
-- 身为一名前端er，博客是必须的，这也是写这个项目的初衷。
-- 整个项目分为三个部分：博客前端页面、Koa服务端、博客后台系统。
-- 该项目包含博客前端页面代码，以及Koa服务器代码。博客的后台系统后续逐渐开放。
-- 一直在自己瞎写，功能还很少。欢迎各位给我提意见和建议~ :blush: 
-- [点这里给我留言](https://redspite.com/comments) 
+-
   
 ## 线上预览
 
 
-  [https://www.redspite.com](https://www.redspite.com)
+  [https://m](https://m)
 
 
 ## 主要功能
 
  **博客前端** 
-- [x] 个人简历展示
-- [x] 文章列表分页
-- [x] 文章详情
-- [x] 访客登陆、登出
-- [x] 留言添加、删除
-- [x] 留言列表分页
-
+- [x] 
 **Koa服务端** 
-- [x] 用户账号创建、登陆登出
-- [x] 文章增删改查
-- [x] 留言增删改查 
-- [x] 留言关键字过滤
-- [x] 留言被回复时发送邮件通知
-
+- [x] 
 **后台系统（代码未上传）**
-- [x] 管理员登陆登出
-- [x] 文章创建、删除、修改
-- [x] 留言统计、留言关键字过滤
-- [x] 访客统计
+- [x] 
 
 ## 技术栈
-- [x] react
-- [x] redux
-- [x] react-redux
-- [x] react-router
-- [x] redux-thunk
-- [x] ant-design
-- [x] typescript
-- [x] webpack
-- [x] Koa
-- [x] MongoDB
-- [x] Mongoose
+- [x] 
 
 ## 本地预览
 
   **下载** 
 
-    git clone https://github.com/Redspitee/React_Koa_Blog.git
+    git clone https://github.com/
 
 
 
